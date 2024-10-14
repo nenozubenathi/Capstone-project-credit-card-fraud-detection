@@ -1,0 +1,57 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b2f; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    padding: 20px;
+    background-color: #162447; /* Dark blue */
+    color: #e43f5a; /* Red for contrast */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Styling the option buttons */
+.options {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.button {
+    background-color: #1f4068; /* Blue button background */
+    color: #f0f0f0;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e43f5a; /* Change color on hover */
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #162447;
+    color: #f0f0f0;
+}

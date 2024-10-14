@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0074c6, #f49c23);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0074c6;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-family: 'Fredoka One', cursive;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    transform: scale(1.05);
+}
+
+/* Welcome Section */
+.dashboard h1 {
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    margin-top: 40px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.dashboard p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Unique Code Section */
+.unique-code {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+}
+
+.unique-code h2 {
+    font-size: 26px;
+    color: #f8f8f8;
+}
+
+.unique-code .code {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0074c6;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Interactive Content and Chatroom Content */
+.interactive-content, .chatroom-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.interactive-content h2, .chatroom-content h2 {
+    font-size: 28px;
+    color: #f8f8f8;
+}
+
+.start-challenge-btn, .join-chatroom-btn {
+    background-color: #f49c23;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.start-challenge-btn:hover, .join-chatroom-btn:hover {
+    background-color: #e6890e;
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0074c6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
