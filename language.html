@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Website</title>
+    <script>
+        function translatePage(languageCode) {
+            var googleTranslateScript = document.createElement('script');
+            googleTranslateScript.type = 'text/javascript';
+            googleTranslateScript.async = true;
+            googleTranslateScript.src = `//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=${languageCode}`;
+            document.head.appendChild(googleTranslateScript);
+
+            var initScript = document.createElement('script');
+            initScript.innerHTML = `
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+            `;
+            document.head.appendChild(initScript);
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Our Multilingual Website</h1>
+    <p>This page can be translated into 12 official languages of South Africa.</p>
+
+    <!-- Dropdown to select the language -->
+    <label for="language-select">Select Language:</label>
+    <select id="language-select" onchange="translatePage(this.value)">
+        <option value="en">English</option>
+        <option value="af">Afrikaans</option>
+        <option value="xh">Xhosa</option>
+        <option value="zu">Zulu</option>
+        <option value="nso">Sotho (Pedi)</option>
+        <option value="tn">Tswana</option>
+        <option value="ve">Venda</option>
+        <option value="ts">Tsonga</option>
+        <option value="ss">Swazi</option>
+        <option value="nbl">Ndebele</option>
+    </select>
+
+    <!-- The element where the Google Translate widget will load -->
+    <div id="google_translate_element"></div>
+
+    <script>
+        // Initially load the page with the default language (English)
+        window.onload = function() {
+            translatePage('en');
+        };
+    </script>
+</body>
+</html>

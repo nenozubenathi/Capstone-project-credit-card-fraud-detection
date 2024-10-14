@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Awareness Form</title>
+    <link rel="stylesheet" href="../CSS/fraud form.css"> 
+</head>
+<body>
+    <header>
+        <p class="nav__logo--text">Fraud Detection</p>
+        <nav>
+            <ul class="nav__links">
+                <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="./thuso.html" class="nav__link">Chatbot</a></li>
+                <li class="nav__item"><a href="./page3.html" class="nav__link">Tips</a></li>
+                <li class="nav__item"><a href="./educational_videos.html" class="nav__link">Educational Videos</a></li>
+                <li class="footer__item"><a href="./connect_iot.html" class="nav__link">Traffic</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="form-container">
+        <h1>Fraud Self-Assessment Form</h1>
+        <form id="fraudForm">
+            <div class="question">
+                <label for="q1">1. Have you noticed any unfamiliar transactions in your bank account?</label><br>
+                <input type="radio" id="q1_yes" name="q1" value="yes"> Yes
+                <input type="radio" id="q1_no" name="q1" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q2">2. Have you received any suspicious emails or phone calls asking for personal information?</label><br>
+                <input type="radio" id="q2_yes" name="q2" value="yes"> Yes
+                <input type="radio" id="q2_no" name="q2" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q3">3. Have you shared your banking details with anyone recently?</label><br>
+                <input type="radio" id="q3_yes" name="q3" value="yes"> Yes
+                <input type="radio" id="q3_no" name="q3" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q4">4. Did you notice any unusual login attempts or alerts on your online accounts?</label><br>
+                <input type="radio" id="q4_yes" name="q4" value="yes"> Yes
+                <input type="radio" id="q4_no" name="q4" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q5">5. Has your account been temporarily blocked due to suspicious activity?</label><br>
+                <input type="radio" id="q5_yes" name="q5" value="yes"> Yes
+                <input type="radio" id="q5_no" name="q5" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q6">6. Have you lost any important documents like your ID, credit card, or bank statements?</label><br>
+                <input type="radio" id="q6_yes" name="q6" value="yes"> Yes
+                <input type="radio" id="q6_no" name="q6" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q7">7. Have you experienced unexpected withdrawals or money transfers from your account?</label><br>
+                <input type="radio" id="q7_yes" name="q7" value="yes"> Yes
+                <input type="radio" id="q7_no" name="q7" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q8">8. Have you recently used public Wi-Fi to access your banking or personal information?</label><br>
+                <input type="radio" id="q8_yes" name="q8" value="yes"> Yes
+                <input type="radio" id="q8_no" name="q8" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q9">9. Have you been contacted by someone claiming to be from your bank asking for verification?</label><br>
+                <input type="radio" id="q9_yes" name="q9" value="yes"> Yes
+                <input type="radio" id="q9_no" name="q9" value="no"> No
+            </div>
+            <div class="question">
+                <label for="q10">10. Have you ever shared your PIN or passwords with a third-party service?</label><br>
+                <input type="radio" id="q10_yes" name="q10" value="yes"> Yes
+                <input type="radio" id="q10_no" name="q10" value="no"> No
+            </div>
+            <button type="button" onclick="submitFraudForm()">Submit</button>
+        </form>
+        <div id="formResult"></div>
+    </div>
+    <script src="../JAVASCRIPT/fraud form.js"></script> <!-- Ensure this path is correct -->
+</body>
+</html>

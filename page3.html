@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tips - Credit Card Fraud</title>
+    <link rel="stylesheet" href="../CSS/page3.css">
+    
+</head>
+<body>
+    <header>
+    
+        <p class="nav__logo--text">Fraud Detection</p>
+      </div>
+      <nav>
+        <ul class="nav__links">
+          <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="./thuso.html" class="nav__link">Chatbot</a></li>
+          <li class="nav__item"><a href="./page2.html" class="nav__link">News</a></li>
+          <li class="nav__item"><a href="./page3.html" class="nav__link">Tips</a></li>
+          <li class="nav__item"><a href="./educational_videos.html" class="nav__link">Educational Videos</a></li>
+          <li class="footer__item"><a href="./connect_iot.html" class="nav__link">Traffic</a></li>
+          <li class="footer__item"><a href="./fraud form.html" class="nav__link">Self Assessment</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+        <section id="daily-tips">
+            <div class="tip-section" id="avoid-fraud">
+                <h2><i class="fas fa-shield-alt"></i> <span>How to Avoid Credit Card Fraud</span></h2>
+                <p id="avoid-fraud-tip">Tips will appear here...</p>
+                <button class="more-btn" onclick="showMore('avoidFraud')">More Advice</button>
+            </div>
+            <div class="separator"></div>
+
+            <div class="tip-section" id="detect-fraud">
+                <h2><i class="fas fa-search"></i> <span>How to Detect Credit Card Fraud</span></h2>
+                <p id="detect-fraud-tip">Tips will appear here...</p>
+                <button class="more-btn" onclick="showMore('detectFraud')">More Advice</button>
+            </div>
+            <div class="separator"></div>
+
+            <div class="tip-section" id="after-fraud">
+                <h2><i class="fas fa-exclamation-circle"></i> <span>Steps After Encountering Credit Card Fraud</span></h2>
+                <p id="after-fraud-tip">Tips will appear here...</p>
+                <button class="more-btn" onclick="showMore('afterFraud')">More Advice</button>
+            </div>
+        </section>
+
+        <div id="thought-bubble">
+            <div class="thought-content">
+                <p id="thought-heading">Did you know?</p>
+                <p id="did-you-know-fact">Interesting facts will appear here...</p>
+                
+            </div>
+            <div class="thought-dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zubenathi Hector Neno | Credit Card Fraud Protection</p>
+    </footer>
+
+    <!-- Modal for More Advice -->
+    <div id="more-advice-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">More Advice</h2>
+            <ul id="modal-advice-list"></ul>
+        </div>
+    </div>
+
+    <!-- Include the tips.js script -->
+    <script src="../JAVASCRIPT/page3.js" defer></script>
+</body>
+</html>
